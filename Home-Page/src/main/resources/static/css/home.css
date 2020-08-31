@@ -1,0 +1,59 @@
+body{
+background-image: url(https://learnyst.s3.amazonaws.com/assets/schools/2410/resources/images/a_fblwkv.png);
+ /* background: linear-gradient(90deg, rgb(32, 0, 126) 0%, rgb(230, 30, 182) 100%);  */
+
+}
+main{
+    text-align: center;
+}
+header{
+    position: relative;
+}
+h1{
+    color: white;
+    padding-top: 110px;
+    font-size: 90px;
+}
+
+button{
+  padding:10px ;
+  height: 60px; 
+  width: 200px;
+   border-radius: 5px; 
+  border-bottom: 1px solid violet;
+  margin-right: 28px;
+  cursor: pointer;
+  transform: scale(1);
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button:hover{
+    background-color: wheat;
+}
+form{
+    display: inline;
+}
+
+
+
+
+.mid{
+  color: white;
+  width: auto;
+  padding-top: 200px;
+  font-size: 18px;
+  /* background-image: url(https://learnyst.s3.amazonaws.com/assets/schools/2410/resources/images/1_iaye1_3m3x7x_oq0w3u.png?v=nfb2rq); */
+}
+
+th,p{
+    padding-right: 13px;
+}
+
+.center,p{
+    display: inline;
+    /* text-align: center; */
+   
+}
+

@@ -1,0 +1,42 @@
+server:
+  port: 8080
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7777/eureka
+spring:
+  application:
+    name: gateway-service
+#  cloud:
+#    gateway:
+#      routes:
+#      - id: directModule
+#        uri: lb://DIRECT-PAYMENT
+#        predicates:
+#        - Path=/direct/**
+#      - id: crossModule
+#        uri: lb://CROSS-BORDER-PAYMENT
+#        predicates:
+#        - Path=/cross/**
+  datasource:
+      username: root
+      password: thedoctor@123
+      url: jdbc:mysql://localhost:3306/world?useSSL=false
+  jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5Dialect
+        hibernate:
+            ddl-auto: update
+  mvc:
+     view:
+        prefix: /WEB-INF/views/
+        suffix: .jsp
+        
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 50000        
